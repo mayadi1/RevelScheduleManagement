@@ -8,10 +8,11 @@
 
 import UIKit
 
-class ViewController: UIViewController, CLWeeklyCalendarViewDelegate {
+class ViewController: UIViewController, CLWeeklyCalendarViewDelegate, UITableViewDataSource, UITableViewDelegate {
     
     var calendarView = CLWeeklyCalendarView()
     
+    @IBOutlet weak var tableView: UITableView!
     
     
     override func viewDidLoad() {
@@ -50,8 +51,20 @@ class ViewController: UIViewController, CLWeeklyCalendarViewDelegate {
         return [CLCalendarWeekStartDay : 2]
     }
     
+    
     func dailyCalendarViewDidSelect(date: NSDate!) {
+
+        let calendar = NSCalendar.currentCalendar()
+        let components = calendar.components([.Day , .Month , .Year], fromDate: date)
         
+        let year =  components.year
+        let month = components.month
+        let day = components.day
+        
+        print(year)
+        print(month)
+        print(day)
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -59,6 +72,45 @@ class ViewController: UIViewController, CLWeeklyCalendarViewDelegate {
         // Dispose of any resources that can be recreated.
     }
 
+    
+    //TableView Setup
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("cellID", forIndexPath: indexPath) as! TableViewCell
+        
+        cell.backgroundColor = UIColor.greenColor()
+        cell.startDate.text = "9PM"
+        cell.endDate.text = "2AM"
+        
+        return cell
+        
+    }
 
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        let alertController = UIAlertController(title: nil, message: "Drop a shift?", preferredStyle: .Alert)
+        
+        
+        alertController.addTextFieldWithConfigurationHandler({ (textField : UITextField!) -> Void in
+            textField.placeholder = "Explain.."
+        })
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .Default) { (UIAlertAction) in
+                    tableView.cellForRowAtIndexPath(indexPath)?.selected = false
+        }
+        
+        let dropAction = UIAlertAction(title: "Drop", style: .Default) { (UIAlertAction) in
+           
+            self.view.endEditing(true)
+            
+        }
+        alertController.addAction(cancelAction)
+        alertController.addAction(dropAction)
+        self.presentViewController(alertController, animated: true, completion: nil)
+    }
 }
 
