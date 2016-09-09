@@ -10,11 +10,13 @@ import UIKit
 
 class ViewController: UIViewController, CLWeeklyCalendarViewDelegate, UITableViewDataSource, UITableViewDelegate {
     
+    
+    
     var calendarView = CLWeeklyCalendarView()
     
     @IBOutlet weak var tableView: UITableView!
     
-    
+    var worksDate = [Work]()
     var works = [Work]()
     
     override func viewDidLoad() {
@@ -65,6 +67,8 @@ class ViewController: UIViewController, CLWeeklyCalendarViewDelegate, UITableVie
     
     
     func dailyCalendarViewDidSelect(date: NSDate!) {
+        self.worksDate.removeAll()
+        self.tableView.reloadData()
 
         let calendar = NSCalendar.currentCalendar()
         let components = calendar.components([.Day , .Month , .Year], fromDate: date)
@@ -82,18 +86,15 @@ class ViewController: UIViewController, CLWeeklyCalendarViewDelegate, UITableVie
             if work.year == year && work.day == day && work.month == month{
                 print(" YEs I work this day ok")
                 print(work.year)
-                
+                self.worksDate.append(work)
+                self.tableView.reloadData()
             }
-            
-            
         }
-        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    
+    
+    
+    
 
     //TableView Setup
     
@@ -102,15 +103,18 @@ class ViewController: UIViewController, CLWeeklyCalendarViewDelegate, UITableVie
         
         
         cell.backgroundColor = UIColor.greenColor()
-        cell.startDate.text = "9PM"
-        cell.endDate.text = "2AM"
         
+        let tempWork = worksDate[indexPath.row]
+        cell.startDate.text = String(tempWork.year)
+        cell.endDate.text = "2AM"
+        cell.backgroundColor = UIColor(patternImage: UIImage(named: "Drop")!)
+    
         return cell
         
     }
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return self.worksDate.count
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {

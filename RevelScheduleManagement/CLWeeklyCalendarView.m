@@ -193,6 +193,7 @@ static float const CLCalendarSelectedDatePrintFontSizeDefault = 13.f;
         [_backgroundImageView addGestureRecognizer:recognizerLeft];
     }
     _backgroundImageView.backgroundColor = self.backgroundImageColor? self.backgroundImageColor : [UIColor colorWithPatternImage:[UIImage calendarBackgroundImage:self.bounds.size.height]];;
+    
     return _backgroundImageView;
 }
 -(void)initDailyViews

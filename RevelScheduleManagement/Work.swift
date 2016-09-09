@@ -17,6 +17,8 @@ struct Work {
     let year: Int
     let month: Int
     let day: Int
+    
+    
 }
 
 extension Work: CustomStringConvertible {
