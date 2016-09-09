@@ -8,11 +8,20 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, CLWeeklyCalendarViewDelegate {
+    
+    var calendarView = CLWeeklyCalendarView()
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        calendarView.frame = CGRectMake(0, 0, view.bounds.size.width, 150)
+        calendarView.backgroundColor = UIColor.blueColor()
+        calendarView.delegate = self
+        self.view.addSubview(self.calendarView)
         
         let request = NSURLRequest(URL: oneEmployeeShiftURL)
         let session = NSURLSession.sharedSession().dataTaskWithRequest(request) { (data, response, error) in
@@ -31,6 +40,17 @@ class ViewController: UIViewController {
             }
         }
         session.resume()
+        
+        
+        
+    }
+    
+    func CLCalendarBehaviorAttributes() -> [NSObject : AnyObject]! {
+        return [CLCalendarWeekStartDay : 2]
+    }
+    
+    func dailyCalendarViewDidSelect(date: NSDate!) {
+        
     }
 
     override func didReceiveMemoryWarning() {
