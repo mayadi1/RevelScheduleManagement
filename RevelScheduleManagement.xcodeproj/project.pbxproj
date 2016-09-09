@@ -14,6 +14,14 @@
 		18404A3D1D8273C8000F234A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18404A3C1D8273C8000F234A /* Assets.xcassets */; };
 		18404A401D8273C8000F234A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18404A3E1D8273C8000F234A /* LaunchScreen.storyboard */; };
 		87CF23351D827550004D21EE /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CF23341D827550004D21EE /* Const.swift */; };
+		87CF233B1D82964C004D21EE /* Work.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CF233A1D82964C004D21EE /* Work.swift */; };
+		87CF23461D82988F004D21EE /* CLWeeklyCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87CF23411D82988F004D21EE /* CLWeeklyCalendarView.m */; };
+		87CF23471D82988F004D21EE /* DailyCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87CF23431D82988F004D21EE /* DailyCalendarView.m */; };
+		87CF23481D82988F004D21EE /* DayTitleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 87CF23451D82988F004D21EE /* DayTitleLabel.m */; };
+		87CF23511D8298A4004D21EE /* NSDate+CL.m in Sources */ = {isa = PBXBuildFile; fileRef = 87CF234A1D8298A4004D21EE /* NSDate+CL.m */; };
+		87CF23521D8298A4004D21EE /* NSDictionary+CL.m in Sources */ = {isa = PBXBuildFile; fileRef = 87CF234C1D8298A4004D21EE /* NSDictionary+CL.m */; };
+		87CF23531D8298A4004D21EE /* UIColor+CL.m in Sources */ = {isa = PBXBuildFile; fileRef = 87CF234E1D8298A4004D21EE /* UIColor+CL.m */; };
+		87CF23541D8298A4004D21EE /* UIImage+CL.m in Sources */ = {isa = PBXBuildFile; fileRef = 87CF23501D8298A4004D21EE /* UIImage+CL.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,8 +33,23 @@
 		18404A3C1D8273C8000F234A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18404A3F1D8273C8000F234A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18404A411D8273C8000F234A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		87CF23371D828B60004D21EE /* RevelScheduleManagement-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RevelScheduleManagement-Bridging-Header.h"; sourceTree = "<group>"; };
 		87CF23341D827550004D21EE /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		87CF23371D828B60004D21EE /* RevelScheduleManagement-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RevelScheduleManagement-Bridging-Header.h"; sourceTree = "<group>"; };
+		87CF233A1D82964C004D21EE /* Work.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Work.swift; sourceTree = "<group>"; };
+		87CF23401D82988F004D21EE /* CLWeeklyCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLWeeklyCalendarView.h; sourceTree = "<group>"; };
+		87CF23411D82988F004D21EE /* CLWeeklyCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLWeeklyCalendarView.m; sourceTree = "<group>"; };
+		87CF23421D82988F004D21EE /* DailyCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DailyCalendarView.h; sourceTree = "<group>"; };
+		87CF23431D82988F004D21EE /* DailyCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DailyCalendarView.m; sourceTree = "<group>"; };
+		87CF23441D82988F004D21EE /* DayTitleLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DayTitleLabel.h; sourceTree = "<group>"; };
+		87CF23451D82988F004D21EE /* DayTitleLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DayTitleLabel.m; sourceTree = "<group>"; };
+		87CF23491D8298A4004D21EE /* NSDate+CL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+CL.h"; sourceTree = "<group>"; };
+		87CF234A1D8298A4004D21EE /* NSDate+CL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+CL.m"; sourceTree = "<group>"; };
+		87CF234B1D8298A4004D21EE /* NSDictionary+CL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+CL.h"; sourceTree = "<group>"; };
+		87CF234C1D8298A4004D21EE /* NSDictionary+CL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+CL.m"; sourceTree = "<group>"; };
+		87CF234D1D8298A4004D21EE /* UIColor+CL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CL.h"; sourceTree = "<group>"; };
+		87CF234E1D8298A4004D21EE /* UIColor+CL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CL.m"; sourceTree = "<group>"; };
+		87CF234F1D8298A4004D21EE /* UIImage+CL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CL.h"; sourceTree = "<group>"; };
+		87CF23501D8298A4004D21EE /* UIImage+CL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CL.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,14 +85,37 @@
 				18404A321D8273C8000F234A /* AppDelegate.swift */,
 				18404A341D8273C8000F234A /* ViewController.swift */,
 				87CF23341D827550004D21EE /* Const.swift */,
+				87CF233A1D82964C004D21EE /* Work.swift */,
 				18404A361D8273C8000F234A /* Main.storyboard */,
 				18404A3C1D8273C8000F234A /* Assets.xcassets */,
 				18404A3E1D8273C8000F234A /* LaunchScreen.storyboard */,
 				18404A411D8273C8000F234A /* Info.plist */,
 				18404A391D8273C8000F234A /* RevelScheduleManagement.xcdatamodeld */,
 				87CF23371D828B60004D21EE /* RevelScheduleManagement-Bridging-Header.h */,
+				87CF23551D8298AC004D21EE /* CLWeeklyCalendarView */,
 			);
 			path = RevelScheduleManagement;
+			sourceTree = "<group>";
+		};
+		87CF23551D8298AC004D21EE /* CLWeeklyCalendarView */ = {
+			isa = PBXGroup;
+			children = (
+				87CF23401D82988F004D21EE /* CLWeeklyCalendarView.h */,
+				87CF23411D82988F004D21EE /* CLWeeklyCalendarView.m */,
+				87CF23421D82988F004D21EE /* DailyCalendarView.h */,
+				87CF23431D82988F004D21EE /* DailyCalendarView.m */,
+				87CF23441D82988F004D21EE /* DayTitleLabel.h */,
+				87CF23451D82988F004D21EE /* DayTitleLabel.m */,
+				87CF23491D8298A4004D21EE /* NSDate+CL.h */,
+				87CF234A1D8298A4004D21EE /* NSDate+CL.m */,
+				87CF234B1D8298A4004D21EE /* NSDictionary+CL.h */,
+				87CF234C1D8298A4004D21EE /* NSDictionary+CL.m */,
+				87CF234D1D8298A4004D21EE /* UIColor+CL.h */,
+				87CF234E1D8298A4004D21EE /* UIColor+CL.m */,
+				87CF234F1D8298A4004D21EE /* UIImage+CL.h */,
+				87CF23501D8298A4004D21EE /* UIImage+CL.m */,
+			);
+			name = CLWeeklyCalendarView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,8 +190,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				18404A3B1D8273C8000F234A /* RevelScheduleManagement.xcdatamodeld in Sources */,
+				87CF23531D8298A4004D21EE /* UIColor+CL.m in Sources */,
 				87CF23351D827550004D21EE /* Const.swift in Sources */,
+				87CF23481D82988F004D21EE /* DayTitleLabel.m in Sources */,
+				87CF233B1D82964C004D21EE /* Work.swift in Sources */,
 				18404A351D8273C8000F234A /* ViewController.swift in Sources */,
+				87CF23521D8298A4004D21EE /* NSDictionary+CL.m in Sources */,
+				87CF23471D82988F004D21EE /* DailyCalendarView.m in Sources */,
+				87CF23461D82988F004D21EE /* CLWeeklyCalendarView.m in Sources */,
+				87CF23511D8298A4004D21EE /* NSDate+CL.m in Sources */,
+				87CF23541D8298A4004D21EE /* UIImage+CL.m in Sources */,
 				18404A331D8273C8000F234A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
