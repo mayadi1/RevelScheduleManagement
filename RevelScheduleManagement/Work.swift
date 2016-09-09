@@ -18,7 +18,7 @@ struct Work {
     let month: Int
     let day: Int
     
-    
+    let role: String
 }
 
 extension Work: CustomStringConvertible {
@@ -50,25 +50,29 @@ struct WorkGenerator {
             if let id = object["id"] as? Int {
                 if let shift_begin_time = object["shift_begin_time"] as? String {
                     if let shift_end_time = object["shift_end_time"] as? String {
-                        
-                        // Create date.
-                        let dateFormatter = NSDateFormatter()
-                        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
-                        let date = dateFormatter.dateFromString(shift_begin_time)
-                        guard let d = date else { return nil }
-                        let calendar = NSCalendar.currentCalendar()
-                        let components = calendar.components([.Day , .Month , .Year], fromDate: d)
-                        let year = components.year
-                        let month = components.month
-                        let day = components.day
-                        print(year)
-                        print(month)
-                        print(day)
-
-                        // Construct Work struct instance.
-                        let work = Work(employee: employee, id: id, shift_begin_time: shift_begin_time, shift_end_time: shift_end_time, year: year, month: month, day: day)
-                        print(work.description)
-                        return work
+                        if let role = object["role"] as? String {
+                            
+                            // Create date.
+                            let dateFormatter = NSDateFormatter()
+                            dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
+                            let date = dateFormatter.dateFromString(shift_begin_time)
+                            guard let d = date else { return nil }
+                            let calendar = NSCalendar.currentCalendar()
+                            let components = calendar.components([.Day , .Month , .Year], fromDate: d)
+                            let year = components.year
+                            let month = components.month
+                            let day = components.day
+                            print(year)
+                            print(month)
+                            print(day)
+                            
+                            
+                            
+                            // Construct Work struct instance.
+                            let work = Work(employee: employee, id: id, shift_begin_time: shift_begin_time, shift_end_time: shift_end_time, year: year, month: month, day: day, role: role)
+                            print(work.description)
+                            return work
+                        }
                     }
                 }
             }
