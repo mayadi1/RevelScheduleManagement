@@ -11,6 +11,7 @@ import UIKit
 class ScheduleViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, CLWeeklyCalendarViewDelegate {
     
     var allWorks = [Work]()
+    var worksDate = [Work]()
     
     var calendarView = CLWeeklyCalendarView()
     @IBOutlet weak var tableView: UITableView!
@@ -38,14 +39,51 @@ class ScheduleViewController: UIViewController, UITableViewDelegate, UITableView
         let loginClient = LoginClient()
         
         // First get all employees.
-        
-        
-        
-        loginClient.getAllWorks(NSURL(string: allWorksURLString)!) { (works) in
-            dispatch_async(dispatch_get_main_queue(), { 
-                self.allWorks = works
-                self.tableView.reloadData()
+        loginClient.getEmployees(NSURL(string: allEmployeesURLString)!) { (employees) in
+            print(employees)
+            
+            self.getWorks(from: employees, completionHandler: { (works) in
+                if works.count > 0 {
+                    self.allWorks += works
+                    dispatch_async(dispatch_get_main_queue(), { 
+                        self.tableView.reloadData()
+                    })
+                }
             })
+        }
+    }
+    
+    private func getWorks(from employees: [Employee], completionHandler: ([Work] -> Void)) {
+        for employee in employees {
+            let employeeID = employee.id
+            let urlString = workScheduleEachEmployeeBaseURLString + String(employeeID) + apiPartURLString
+            
+            let request = NSURLRequest(URL: NSURL(string: urlString)!)
+            let session = NSURLSession.sharedSession().dataTaskWithRequest(request) { (data, response, error) in
+                if error != nil {
+                    print(error)
+                } else {
+                    print(data)
+                    if let data = data {
+                        do {
+                            let json = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers)
+                            print(json)
+                            if let jsonDict = json as? NSDictionary {
+                                if let objects = jsonDict["objects"] as? [[String : AnyObject]] {
+                                    print(objects)
+                                    let works = WorkGenerator.generateWorks(objects: objects)
+                                    if let works = works {
+                                        completionHandler(works)
+                                    }
+                                }
+                            }
+                        } catch let jsonError as NSError {
+                            print(jsonError)
+                        }
+                    }
+                }
+            }
+            session.resume()
         }
     }
     
@@ -54,7 +92,7 @@ class ScheduleViewController: UIViewController, UITableViewDelegate, UITableView
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("ScheduleTableViewCell", forIndexPath: indexPath) as! ScheduleTableViewCell
         let work = allWorks[indexPath.row]
-        cell.textLabel?.text = work.employee
+        cell.textLabel?.text = String(work.id) + " m\(work.month) d\(work.day)"
         return cell
     }
     
@@ -88,7 +126,7 @@ class ScheduleViewController: UIViewController, UITableViewDelegate, UITableView
             if work.year == year && work.day == day && work.month == month{
                 print(" YEs I work this day ok")
                 print(work.year)
-//                self.worksDate.append(work)
+                self.worksDate.append(work)
                 self.tableView.reloadData()
             }
         }

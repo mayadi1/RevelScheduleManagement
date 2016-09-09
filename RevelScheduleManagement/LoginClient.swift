@@ -76,7 +76,7 @@ struct LoginClient {
         session.resume()
     }
     
-    func getEmployees(url: NSURL, completionHandler: ([Work]) -> ()) {
+    func getEmployees(url: NSURL, completionHandler: ([Employee]) -> ()) {
         let request = NSURLRequest(URL: url)
         let session = NSURLSession.sharedSession().dataTaskWithRequest(request) { (data, response, error) in
             if error != nil {
@@ -91,8 +91,10 @@ struct LoginClient {
                             if let objects = jsonDict["objects"] as? [[String : AnyObject]] {
                                 print(objects)
                                 print(objects[0])
-                                let employees = WorkGenerator.generateWorks(objects: objects)!
-//                                completionHandler(works)
+                                let employees = createEmployees(objects: objects)
+                                if let employees = employees {
+                                    completionHandler(employees)
+                                }
                             }
                         }
                         
