@@ -35,6 +35,15 @@ class ViewController: UIViewController, CLWeeklyCalendarViewDelegate, UITableVie
                     do {
                         let json = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers)
                         print(json)
+                        if let jsonDict = json as? NSDictionary {
+                            if let objects = jsonDict["objects"] as? [[String : AnyObject]] {
+                                print(objects)
+                                print(objects[0])
+                                let works = WorkGenerator.generateWorks(objects: objects)
+                            }
+                        }
+                        
+                        
                     } catch let jsonError as NSError {
                         print(jsonError)
                     }
@@ -72,7 +81,6 @@ class ViewController: UIViewController, CLWeeklyCalendarViewDelegate, UITableVie
         // Dispose of any resources that can be recreated.
     }
 
-    
     //TableView Setup
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {

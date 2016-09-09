@@ -13,9 +13,9 @@
 		18404A3B1D8273C8000F234A /* RevelScheduleManagement.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18404A391D8273C8000F234A /* RevelScheduleManagement.xcdatamodeld */; };
 		18404A3D1D8273C8000F234A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18404A3C1D8273C8000F234A /* Assets.xcassets */; };
 		18404A401D8273C8000F234A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18404A3E1D8273C8000F234A /* LaunchScreen.storyboard */; };
+		87A719C61D82B55F0081D993 /* Work.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CF233A1D82964C004D21EE /* Work.swift */; };
 		185F28C21D82AB4700C79EEF /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185F28C11D82AB4700C79EEF /* TableViewCell.swift */; };
 		87CF23351D827550004D21EE /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CF23341D827550004D21EE /* Const.swift */; };
-		87CF233B1D82964C004D21EE /* Work.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CF233A1D82964C004D21EE /* Work.swift */; };
 		87CF23461D82988F004D21EE /* CLWeeklyCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87CF23411D82988F004D21EE /* CLWeeklyCalendarView.m */; };
 		87CF23471D82988F004D21EE /* DailyCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87CF23431D82988F004D21EE /* DailyCalendarView.m */; };
 		87CF23481D82988F004D21EE /* DayTitleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 87CF23451D82988F004D21EE /* DayTitleLabel.m */; };
@@ -197,11 +197,11 @@
 				87CF23531D8298A4004D21EE /* UIColor+CL.m in Sources */,
 				87CF23351D827550004D21EE /* Const.swift in Sources */,
 				87CF23481D82988F004D21EE /* DayTitleLabel.m in Sources */,
-				87CF233B1D82964C004D21EE /* Work.swift in Sources */,
 				18404A351D8273C8000F234A /* ViewController.swift in Sources */,
 				87CF23521D8298A4004D21EE /* NSDictionary+CL.m in Sources */,
 				87CF23471D82988F004D21EE /* DailyCalendarView.m in Sources */,
 				87CF23461D82988F004D21EE /* CLWeeklyCalendarView.m in Sources */,
+				87A719C61D82B55F0081D993 /* Work.swift in Sources */,
 				87CF23511D8298A4004D21EE /* NSDate+CL.m in Sources */,
 				87CF23541D8298A4004D21EE /* UIImage+CL.m in Sources */,
 				18404A331D8273C8000F234A /* AppDelegate.swift in Sources */,
