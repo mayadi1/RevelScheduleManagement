@@ -1,0 +1,383 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18404A331D8273C8000F234A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18404A321D8273C8000F234A /* AppDelegate.swift */; };
+		18404A351D8273C8000F234A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18404A341D8273C8000F234A /* ViewController.swift */; };
+		18404A381D8273C8000F234A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18404A361D8273C8000F234A /* Main.storyboard */; };
+		18404A3B1D8273C8000F234A /* RevelScheduleManagement.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18404A391D8273C8000F234A /* RevelScheduleManagement.xcdatamodeld */; };
+		18404A3D1D8273C8000F234A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18404A3C1D8273C8000F234A /* Assets.xcassets */; };
+		18404A401D8273C8000F234A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18404A3E1D8273C8000F234A /* LaunchScreen.storyboard */; };
+<<<<<<< HEAD
+		185F28C21D82AB4700C79EEF /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185F28C11D82AB4700C79EEF /* TableViewCell.swift */; };
+=======
+		87A719C61D82B55F0081D993 /* Work.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CF233A1D82964C004D21EE /* Work.swift */; };
+>>>>>>> calendar-branch
+		87CF23351D827550004D21EE /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CF23341D827550004D21EE /* Const.swift */; };
+		87CF23461D82988F004D21EE /* CLWeeklyCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87CF23411D82988F004D21EE /* CLWeeklyCalendarView.m */; };
+		87CF23471D82988F004D21EE /* DailyCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87CF23431D82988F004D21EE /* DailyCalendarView.m */; };
+		87CF23481D82988F004D21EE /* DayTitleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 87CF23451D82988F004D21EE /* DayTitleLabel.m */; };
+		87CF23511D8298A4004D21EE /* NSDate+CL.m in Sources */ = {isa = PBXBuildFile; fileRef = 87CF234A1D8298A4004D21EE /* NSDate+CL.m */; };
+		87CF23521D8298A4004D21EE /* NSDictionary+CL.m in Sources */ = {isa = PBXBuildFile; fileRef = 87CF234C1D8298A4004D21EE /* NSDictionary+CL.m */; };
+		87CF23531D8298A4004D21EE /* UIColor+CL.m in Sources */ = {isa = PBXBuildFile; fileRef = 87CF234E1D8298A4004D21EE /* UIColor+CL.m */; };
+		87CF23541D8298A4004D21EE /* UIImage+CL.m in Sources */ = {isa = PBXBuildFile; fileRef = 87CF23501D8298A4004D21EE /* UIImage+CL.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		18404A2F1D8273C8000F234A /* RevelScheduleManagement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RevelScheduleManagement.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18404A321D8273C8000F234A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		18404A341D8273C8000F234A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		18404A371D8273C8000F234A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18404A3A1D8273C8000F234A /* RevelScheduleManagement.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RevelScheduleManagement.xcdatamodel; sourceTree = "<group>"; };
+		18404A3C1D8273C8000F234A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18404A3F1D8273C8000F234A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18404A411D8273C8000F234A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		185F28C11D82AB4700C79EEF /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		87CF23341D827550004D21EE /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		87CF23371D828B60004D21EE /* RevelScheduleManagement-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RevelScheduleManagement-Bridging-Header.h"; sourceTree = "<group>"; };
+		87CF233A1D82964C004D21EE /* Work.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Work.swift; sourceTree = "<group>"; };
+		87CF23401D82988F004D21EE /* CLWeeklyCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLWeeklyCalendarView.h; sourceTree = "<group>"; };
+		87CF23411D82988F004D21EE /* CLWeeklyCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLWeeklyCalendarView.m; sourceTree = "<group>"; };
+		87CF23421D82988F004D21EE /* DailyCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DailyCalendarView.h; sourceTree = "<group>"; };
+		87CF23431D82988F004D21EE /* DailyCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DailyCalendarView.m; sourceTree = "<group>"; };
+		87CF23441D82988F004D21EE /* DayTitleLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DayTitleLabel.h; sourceTree = "<group>"; };
+		87CF23451D82988F004D21EE /* DayTitleLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DayTitleLabel.m; sourceTree = "<group>"; };
+		87CF23491D8298A4004D21EE /* NSDate+CL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+CL.h"; sourceTree = "<group>"; };
+		87CF234A1D8298A4004D21EE /* NSDate+CL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+CL.m"; sourceTree = "<group>"; };
+		87CF234B1D8298A4004D21EE /* NSDictionary+CL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+CL.h"; sourceTree = "<group>"; };
+		87CF234C1D8298A4004D21EE /* NSDictionary+CL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+CL.m"; sourceTree = "<group>"; };
+		87CF234D1D8298A4004D21EE /* UIColor+CL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CL.h"; sourceTree = "<group>"; };
+		87CF234E1D8298A4004D21EE /* UIColor+CL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CL.m"; sourceTree = "<group>"; };
+		87CF234F1D8298A4004D21EE /* UIImage+CL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CL.h"; sourceTree = "<group>"; };
+		87CF23501D8298A4004D21EE /* UIImage+CL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CL.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18404A2C1D8273C8000F234A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18404A261D8273C8000F234A = {
+			isa = PBXGroup;
+			children = (
+				18404A311D8273C8000F234A /* RevelScheduleManagement */,
+				18404A301D8273C8000F234A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18404A301D8273C8000F234A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18404A2F1D8273C8000F234A /* RevelScheduleManagement.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18404A311D8273C8000F234A /* RevelScheduleManagement */ = {
+			isa = PBXGroup;
+			children = (
+				18404A321D8273C8000F234A /* AppDelegate.swift */,
+				18404A341D8273C8000F234A /* ViewController.swift */,
+				87CF23341D827550004D21EE /* Const.swift */,
+				87CF233A1D82964C004D21EE /* Work.swift */,
+				18404A361D8273C8000F234A /* Main.storyboard */,
+				185F28C11D82AB4700C79EEF /* TableViewCell.swift */,
+				18404A3C1D8273C8000F234A /* Assets.xcassets */,
+				18404A3E1D8273C8000F234A /* LaunchScreen.storyboard */,
+				18404A411D8273C8000F234A /* Info.plist */,
+				18404A391D8273C8000F234A /* RevelScheduleManagement.xcdatamodeld */,
+				87CF23371D828B60004D21EE /* RevelScheduleManagement-Bridging-Header.h */,
+				87CF23551D8298AC004D21EE /* CLWeeklyCalendarView */,
+			);
+			path = RevelScheduleManagement;
+			sourceTree = "<group>";
+		};
+		87CF23551D8298AC004D21EE /* CLWeeklyCalendarView */ = {
+			isa = PBXGroup;
+			children = (
+				87CF23401D82988F004D21EE /* CLWeeklyCalendarView.h */,
+				87CF23411D82988F004D21EE /* CLWeeklyCalendarView.m */,
+				87CF23421D82988F004D21EE /* DailyCalendarView.h */,
+				87CF23431D82988F004D21EE /* DailyCalendarView.m */,
+				87CF23441D82988F004D21EE /* DayTitleLabel.h */,
+				87CF23451D82988F004D21EE /* DayTitleLabel.m */,
+				87CF23491D8298A4004D21EE /* NSDate+CL.h */,
+				87CF234A1D8298A4004D21EE /* NSDate+CL.m */,
+				87CF234B1D8298A4004D21EE /* NSDictionary+CL.h */,
+				87CF234C1D8298A4004D21EE /* NSDictionary+CL.m */,
+				87CF234D1D8298A4004D21EE /* UIColor+CL.h */,
+				87CF234E1D8298A4004D21EE /* UIColor+CL.m */,
+				87CF234F1D8298A4004D21EE /* UIImage+CL.h */,
+				87CF23501D8298A4004D21EE /* UIImage+CL.m */,
+			);
+			name = CLWeeklyCalendarView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18404A2E1D8273C8000F234A /* RevelScheduleManagement */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18404A441D8273C8000F234A /* Build configuration list for PBXNativeTarget "RevelScheduleManagement" */;
+			buildPhases = (
+				18404A2B1D8273C8000F234A /* Sources */,
+				18404A2C1D8273C8000F234A /* Frameworks */,
+				18404A2D1D8273C8000F234A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RevelScheduleManagement;
+			productName = RevelScheduleManagement;
+			productReference = 18404A2F1D8273C8000F234A /* RevelScheduleManagement.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18404A271D8273C8000F234A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Mohamed Ayadi";
+				TargetAttributes = {
+					18404A2E1D8273C8000F234A = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 18404A2A1D8273C8000F234A /* Build configuration list for PBXProject "RevelScheduleManagement" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18404A261D8273C8000F234A;
+			productRefGroup = 18404A301D8273C8000F234A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18404A2E1D8273C8000F234A /* RevelScheduleManagement */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18404A2D1D8273C8000F234A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18404A401D8273C8000F234A /* LaunchScreen.storyboard in Resources */,
+				18404A3D1D8273C8000F234A /* Assets.xcassets in Resources */,
+				18404A381D8273C8000F234A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18404A2B1D8273C8000F234A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				185F28C21D82AB4700C79EEF /* TableViewCell.swift in Sources */,
+				18404A3B1D8273C8000F234A /* RevelScheduleManagement.xcdatamodeld in Sources */,
+				87CF23531D8298A4004D21EE /* UIColor+CL.m in Sources */,
+				87CF23351D827550004D21EE /* Const.swift in Sources */,
+				87CF23481D82988F004D21EE /* DayTitleLabel.m in Sources */,
+				18404A351D8273C8000F234A /* ViewController.swift in Sources */,
+				87CF23521D8298A4004D21EE /* NSDictionary+CL.m in Sources */,
+				87CF23471D82988F004D21EE /* DailyCalendarView.m in Sources */,
+				87CF23461D82988F004D21EE /* CLWeeklyCalendarView.m in Sources */,
+				87A719C61D82B55F0081D993 /* Work.swift in Sources */,
+				87CF23511D8298A4004D21EE /* NSDate+CL.m in Sources */,
+				87CF23541D8298A4004D21EE /* UIImage+CL.m in Sources */,
+				18404A331D8273C8000F234A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		18404A361D8273C8000F234A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18404A371D8273C8000F234A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		18404A3E1D8273C8000F234A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18404A3F1D8273C8000F234A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18404A421D8273C8000F234A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		18404A431D8273C8000F234A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18404A451D8273C8000F234A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = RevelScheduleManagement/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ayadios.RevelScheduleManagement;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RevelScheduleManagement/RevelScheduleManagement-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		18404A461D8273C8000F234A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = RevelScheduleManagement/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ayadios.RevelScheduleManagement;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RevelScheduleManagement/RevelScheduleManagement-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18404A2A1D8273C8000F234A /* Build configuration list for PBXProject "RevelScheduleManagement" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18404A421D8273C8000F234A /* Debug */,
+				18404A431D8273C8000F234A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18404A441D8273C8000F234A /* Build configuration list for PBXNativeTarget "RevelScheduleManagement" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18404A451D8273C8000F234A /* Debug */,
+				18404A461D8273C8000F234A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		18404A391D8273C8000F234A /* RevelScheduleManagement.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				18404A3A1D8273C8000F234A /* RevelScheduleManagement.xcdatamodel */,
+			);
+			currentVersion = 18404A3A1D8273C8000F234A /* RevelScheduleManagement.xcdatamodel */;
+			path = RevelScheduleManagement.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 18404A271D8273C8000F234A /* Project object */;
+}
