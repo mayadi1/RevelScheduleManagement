@@ -17,7 +17,8 @@ struct Work {
     let year: Int
     let month: Int
     let day: Int
-    
+    let hour: Int
+    let endingHour: Int
     let role: String
 }
 
@@ -58,7 +59,9 @@ struct WorkGenerator {
                             let date = dateFormatter.dateFromString(shift_begin_time)
                             guard let d = date else { return nil }
                             let calendar = NSCalendar.currentCalendar()
-                            let components = calendar.components([.Day , .Month , .Year], fromDate: d)
+                            let components = calendar.components([.Day , .Month , .Year, .Hour], fromDate: d)
+                            
+                            let hour = components.hour
                             let year = components.year
                             let month = components.month
                             let day = components.day
@@ -66,10 +69,19 @@ struct WorkGenerator {
                             print(month)
                             print(day)
                             
+                            let date2 = dateFormatter.dateFromString(shift_end_time)
+                            guard let d2 = date2 else { return nil }
+                            let calendar2 = NSCalendar.currentCalendar()
+                            let components2 = calendar2.components([ .Hour], fromDate: d2)
+                            
+                            let endingHour = components2.hour
+                        
+                          
+                            
                             
                             
                             // Construct Work struct instance.
-                            let work = Work(employee: employee, id: id, shift_begin_time: shift_begin_time, shift_end_time: shift_end_time, year: year, month: month, day: day, role: role)
+                            let work = Work(employee: employee, id: id, shift_begin_time: shift_begin_time, shift_end_time: shift_end_time, year: year, month: month, day: day, hour:hour,endingHour:endingHour, role: role)
                             print(work.description)
                             return work
                         }

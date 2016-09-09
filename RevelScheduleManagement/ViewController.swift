@@ -23,6 +23,8 @@ class ViewController: UIViewController, CLWeeklyCalendarViewDelegate, UITableVie
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        self.tableView.backgroundColor = UIColor(patternImage: UIImage(named: "Group_0004_fourth")!)
+        
         let frame = CGRectMake(0, 0, view.bounds.size.width, 130)
         calendarView = CLWeeklyCalendarView(frame: frame)
         calendarView.backgroundColor = UIColor.blueColor()
@@ -105,9 +107,14 @@ class ViewController: UIViewController, CLWeeklyCalendarViewDelegate, UITableVie
         cell.backgroundColor = UIColor.greenColor()
         
         let tempWork = worksDate[indexPath.row]
-        cell.startDate.text = String(tempWork.year)
-        cell.endDate.text = "2AM"
-        cell.backgroundColor = UIColor(patternImage: UIImage(named: "Drop")!)
+        cell.startDate.text = String(tempWork.hour)
+        cell.endDate.text = String(tempWork.endingHour)
+        
+        if indexPath.row == 0 {
+            cell.backgroundColor = UIColor(patternImage: UIImage(named: "Drop")!)}else{
+            cell.backgroundColor = UIColor(patternImage: UIImage(named: "Group_0003_third")!)
+            
+        }
     
         return cell
         
