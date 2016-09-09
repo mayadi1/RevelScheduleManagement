@@ -24,9 +24,6 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="76K-Rz-yb7">
                                 <rect key="frame" x="281" y="285" width="38" height="30"/>
                                 <state key="normal" title="Login"/>
-                                <connections>
-                                    <action selector="loginButtonClicked:" destination="o4F-wK-TeA" eventType="touchUpInside" id="OBg-eX-ha5"/>
-                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let the New Experience Begin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HCd-X2-ss1">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
@@ -73,6 +70,15 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fbR-6u-Cfn">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginButtonClicked:" destination="o4F-wK-TeA" eventType="touchUpInside" id="fdI-3h-YvI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -96,6 +102,7 @@
                             <constraint firstItem="x74-3a-sVR" firstAttribute="leading" secondItem="Jon-4t-CcS" secondAttribute="leadingMargin" constant="68" id="IGh-m6-zsM"/>
                             <constraint firstItem="xU1-6i-GCo" firstAttribute="top" secondItem="6OS-iL-Dtl" secondAttribute="bottom" constant="8" symbolic="YES" id="IK5-gB-Qms"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Xgs-eG-jem" secondAttribute="trailing" constant="57" id="LAi-e3-Hbu"/>
+                            <constraint firstItem="ZCT-Qj-C9s" firstAttribute="top" secondItem="fbR-6u-Cfn" secondAttribute="bottom" constant="89" id="Mcy-CL-WUm"/>
                             <constraint firstItem="6OS-iL-Dtl" firstAttribute="centerX" secondItem="76K-Rz-yb7" secondAttribute="centerX" id="SGj-ek-cFc"/>
                             <constraint firstItem="6OS-iL-Dtl" firstAttribute="top" secondItem="HCd-X2-ss1" secondAttribute="bottom" constant="73" id="UHX-6V-on0"/>
                             <constraint firstItem="x74-3a-sVR" firstAttribute="top" secondItem="6OS-iL-Dtl" secondAttribute="bottom" constant="8" symbolic="YES" id="VSy-lm-5ej">
@@ -111,6 +118,7 @@
                             <constraint firstItem="HCd-X2-ss1" firstAttribute="top" secondItem="Fib-IA-zsS" secondAttribute="bottom" constant="415" id="dqh-3W-1KG">
                                 <variation key="heightClass=regular-widthClass=compact" constant="463"/>
                             </constraint>
+                            <constraint firstItem="fbR-6u-Cfn" firstAttribute="centerX" secondItem="Jon-4t-CcS" secondAttribute="centerX" id="eR4-W4-OTU"/>
                             <constraint firstItem="76K-Rz-yb7" firstAttribute="top" secondItem="xU1-6i-GCo" secondAttribute="bottom" constant="34" id="f15-Hl-cfv"/>
                             <constraint firstItem="ZCT-Qj-C9s" firstAttribute="top" secondItem="304-sv-l66" secondAttribute="bottom" id="hZl-xs-Dgn"/>
                             <constraint firstItem="xU1-6i-GCo" firstAttribute="trailing" secondItem="6OS-iL-Dtl" secondAttribute="trailing" id="hb7-Yb-9Kc"/>
@@ -129,6 +137,7 @@
                                 <exclude reference="x74-3a-sVR"/>
                                 <exclude reference="xU1-6i-GCo"/>
                                 <exclude reference="Xgs-eG-jem"/>
+                                <exclude reference="fbR-6u-Cfn"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="CiS-h2-hs0"/>
@@ -151,6 +160,8 @@
                                 <exclude reference="sAd-s8-1Zf"/>
                                 <exclude reference="Xda-JI-oAo"/>
                                 <exclude reference="f15-Hl-cfv"/>
+                                <exclude reference="eR4-W4-OTU"/>
+                                <exclude reference="Mcy-CL-WUm"/>
                                 <exclude reference="XzA-yC-yZ5"/>
                                 <exclude reference="hZl-xs-Dgn"/>
                             </mask>
@@ -161,6 +172,7 @@
                                 <include reference="x74-3a-sVR"/>
                                 <include reference="xU1-6i-GCo"/>
                                 <include reference="Xgs-eG-jem"/>
+                                <include reference="fbR-6u-Cfn"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="551-wy-9Af"/>
@@ -190,6 +202,8 @@
                                 <include reference="Xda-JI-oAo"/>
                                 <include reference="f15-Hl-cfv"/>
                                 <exclude reference="sPj-D9-FH3"/>
+                                <include reference="eR4-W4-OTU"/>
+                                <include reference="Mcy-CL-WUm"/>
                                 <include reference="XzA-yC-yZ5"/>
                                 <exclude reference="dba-5w-1HO"/>
                                 <include reference="hZl-xs-Dgn"/>
@@ -201,7 +215,6 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="inputTextField" destination="6OS-iL-Dtl" id="hHb-de-lpb"/>
-                        <outlet property="loginButton" destination="76K-Rz-yb7" id="lvk-n6-0RN"/>
                         <segue destination="8PW-DF-8hz" kind="show" id="bt3-5u-0Eu"/>
                         <segue destination="XHr-4Z-zK5" kind="show" id="6iV-rC-1lS"/>
                     </connections>
