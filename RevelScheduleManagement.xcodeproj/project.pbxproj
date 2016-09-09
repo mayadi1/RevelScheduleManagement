@@ -18,6 +18,11 @@
 		87B64C9F1D82CF7D00D6CF54 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87B64C9E1D82CF7D00D6CF54 /* LoginViewController.storyboard */; };
 		87B64CA21D82CF9D00D6CF54 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B64CA11D82CF9D00D6CF54 /* LoginViewController.swift */; };
 		87B64CA41D82D87B00D6CF54 /* LoginClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B64CA31D82D87B00D6CF54 /* LoginClient.swift */; };
+		87B64CA61D82FB0700D6CF54 /* ManagerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87B64CA51D82FB0700D6CF54 /* ManagerViewController.storyboard */; };
+		87B64CA91D82FB3200D6CF54 /* ManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B64CA81D82FB3200D6CF54 /* ManagerViewController.swift */; };
+		87B64CAB1D82FCDE00D6CF54 /* ScheduleViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87B64CAA1D82FCDE00D6CF54 /* ScheduleViewController.storyboard */; };
+		87B64CAD1D82FD2600D6CF54 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B64CAC1D82FD2600D6CF54 /* ScheduleViewController.swift */; };
+		87B64CAF1D83151B00D6CF54 /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B64CAE1D83151B00D6CF54 /* ScheduleTableViewCell.swift */; };
 		87CF23351D827550004D21EE /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CF23341D827550004D21EE /* Const.swift */; };
 		87CF23461D82988F004D21EE /* CLWeeklyCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87CF23411D82988F004D21EE /* CLWeeklyCalendarView.m */; };
 		87CF23471D82988F004D21EE /* DailyCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87CF23431D82988F004D21EE /* DailyCalendarView.m */; };
@@ -41,6 +46,11 @@
 		87B64C9E1D82CF7D00D6CF54 /* LoginViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
 		87B64CA11D82CF9D00D6CF54 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		87B64CA31D82D87B00D6CF54 /* LoginClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginClient.swift; sourceTree = "<group>"; };
+		87B64CA51D82FB0700D6CF54 /* ManagerViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ManagerViewController.storyboard; sourceTree = "<group>"; };
+		87B64CA81D82FB3200D6CF54 /* ManagerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagerViewController.swift; sourceTree = "<group>"; };
+		87B64CAA1D82FCDE00D6CF54 /* ScheduleViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ScheduleViewController.storyboard; sourceTree = "<group>"; };
+		87B64CAC1D82FD2600D6CF54 /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		87B64CAE1D83151B00D6CF54 /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewCell.swift; sourceTree = "<group>"; };
 		87CF23341D827550004D21EE /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		87CF23371D828B60004D21EE /* RevelScheduleManagement-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RevelScheduleManagement-Bridging-Header.h"; sourceTree = "<group>"; };
 		87CF233A1D82964C004D21EE /* Work.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Work.swift; sourceTree = "<group>"; };
@@ -95,6 +105,7 @@
 				87CF23341D827550004D21EE /* Const.swift */,
 				87CF233A1D82964C004D21EE /* Work.swift */,
 				87B64CA31D82D87B00D6CF54 /* LoginClient.swift */,
+				87B64CA71D82FB1000D6CF54 /* ManagerScreen */,
 				87B64CA01D82CF8C00D6CF54 /* LoginScreen */,
 				18404A361D8273C8000F234A /* Main.storyboard */,
 				185F28C11D82AB4700C79EEF /* TableViewCell.swift */,
@@ -115,6 +126,18 @@
 				87B64CA11D82CF9D00D6CF54 /* LoginViewController.swift */,
 			);
 			name = LoginScreen;
+			sourceTree = "<group>";
+		};
+		87B64CA71D82FB1000D6CF54 /* ManagerScreen */ = {
+			isa = PBXGroup;
+			children = (
+				87B64CA51D82FB0700D6CF54 /* ManagerViewController.storyboard */,
+				87B64CA81D82FB3200D6CF54 /* ManagerViewController.swift */,
+				87B64CAA1D82FCDE00D6CF54 /* ScheduleViewController.storyboard */,
+				87B64CAC1D82FD2600D6CF54 /* ScheduleViewController.swift */,
+				87B64CAE1D83151B00D6CF54 /* ScheduleTableViewCell.swift */,
+			);
+			name = ManagerScreen;
 			sourceTree = "<group>";
 		};
 		87CF23551D8298AC004D21EE /* CLWeeklyCalendarView */ = {
@@ -196,7 +219,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87B64CA61D82FB0700D6CF54 /* ManagerViewController.storyboard in Resources */,
 				18404A401D8273C8000F234A /* LaunchScreen.storyboard in Resources */,
+				87B64CAB1D82FCDE00D6CF54 /* ScheduleViewController.storyboard in Resources */,
 				87B64C9F1D82CF7D00D6CF54 /* LoginViewController.storyboard in Resources */,
 				18404A3D1D8273C8000F234A /* Assets.xcassets in Resources */,
 				18404A381D8273C8000F234A /* Main.storyboard in Resources */,
@@ -210,12 +235,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87B64CA91D82FB3200D6CF54 /* ManagerViewController.swift in Sources */,
 				87B64CA21D82CF9D00D6CF54 /* LoginViewController.swift in Sources */,
+				87B64CAD1D82FD2600D6CF54 /* ScheduleViewController.swift in Sources */,
 				185F28C21D82AB4700C79EEF /* TableViewCell.swift in Sources */,
 				18404A3B1D8273C8000F234A /* RevelScheduleManagement.xcdatamodeld in Sources */,
 				87CF23531D8298A4004D21EE /* UIColor+CL.m in Sources */,
 				87CF23351D827550004D21EE /* Const.swift in Sources */,
 				87CF23481D82988F004D21EE /* DayTitleLabel.m in Sources */,
+				87B64CAF1D83151B00D6CF54 /* ScheduleTableViewCell.swift in Sources */,
 				87B64CA41D82D87B00D6CF54 /* LoginClient.swift in Sources */,
 				18404A351D8273C8000F234A /* ViewController.swift in Sources */,
 				87CF23521D8298A4004D21EE /* NSDictionary+CL.m in Sources */,
