@@ -15,6 +15,8 @@ class ViewController: UIViewController, CLWeeklyCalendarViewDelegate, UITableVie
     @IBOutlet weak var tableView: UITableView!
     
     
+    var works = [Work]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -39,7 +41,8 @@ class ViewController: UIViewController, CLWeeklyCalendarViewDelegate, UITableVie
                             if let objects = jsonDict["objects"] as? [[String : AnyObject]] {
                                 print(objects)
                                 print(objects[0])
-                                let works = WorkGenerator.generateWorks(objects: objects)
+                                self.works = WorkGenerator.generateWorks(objects: objects)!
+                                
                             }
                         }
                         
@@ -74,6 +77,17 @@ class ViewController: UIViewController, CLWeeklyCalendarViewDelegate, UITableVie
         print(month)
         print(day)
 
+        for work in works{
+            
+            if work.year == year && work.day == day && work.month == month{
+                print(" YEs I work this day ok")
+                print(work.year)
+                
+            }
+            
+            
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -85,6 +99,7 @@ class ViewController: UIViewController, CLWeeklyCalendarViewDelegate, UITableVie
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cellID", forIndexPath: indexPath) as! TableViewCell
+        
         
         cell.backgroundColor = UIColor.greenColor()
         cell.startDate.text = "9PM"
