@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController, CLWeeklyCalendarViewDelegate, UITableViewDataSource, UITableViewDelegate {
     
-    
+    var employeeURL: NSURL = NSURL()
     
     var calendarView = CLWeeklyCalendarView()
     
@@ -23,6 +23,7 @@ class ViewController: UIViewController, CLWeeklyCalendarViewDelegate, UITableVie
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        
         self.tableView.backgroundColor = UIColor(patternImage: UIImage(named: "Group_0004_fourth")!)
         
         let frame = CGRectMake(0, 0, view.bounds.size.width, 130)
@@ -31,7 +32,7 @@ class ViewController: UIViewController, CLWeeklyCalendarViewDelegate, UITableVie
         calendarView.delegate = self
         self.view.addSubview(self.calendarView)
         
-        let request = NSURLRequest(URL: oneEmployeeShiftURL)
+        let request = NSURLRequest(URL: employeeURL)
         let session = NSURLSession.sharedSession().dataTaskWithRequest(request) { (data, response, error) in
             if error != nil {
                 print(error)

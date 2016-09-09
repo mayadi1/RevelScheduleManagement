@@ -34,7 +34,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
 
     private func createURLString(inputString inputString: String) -> String? {
         guard inputString.characters.count > 0 else { return nil }
-        return baseURLString + timePartURLString + inputString + apiPartURLString
+        return baseURLString + inputString + timePartURLString + apiPartURLString
     }
     
     private func login(url: NSURL) {
@@ -49,7 +49,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                 
                 dispatch_async(dispatch_get_main_queue(), { 
                     let loginStoryBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-                    let employeeViewController: UIViewController = loginStoryBoard.instantiateViewControllerWithIdentifier("EmployeeViewController")
+                    let employeeViewController: ViewController = loginStoryBoard.instantiateViewControllerWithIdentifier("EmployeeViewController") as! ViewController
+                    employeeViewController.employeeURL = url
                     self.presentViewController(employeeViewController, animated: true, completion: nil)
                 })
 
