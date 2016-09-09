@@ -13,6 +13,7 @@
 		18404A3B1D8273C8000F234A /* RevelScheduleManagement.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18404A391D8273C8000F234A /* RevelScheduleManagement.xcdatamodeld */; };
 		18404A3D1D8273C8000F234A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18404A3C1D8273C8000F234A /* Assets.xcassets */; };
 		18404A401D8273C8000F234A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18404A3E1D8273C8000F234A /* LaunchScreen.storyboard */; };
+		87CF23351D827550004D21EE /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CF23341D827550004D21EE /* Const.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		18404A3C1D8273C8000F234A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18404A3F1D8273C8000F234A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18404A411D8273C8000F234A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87CF23341D827550004D21EE /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				18404A321D8273C8000F234A /* AppDelegate.swift */,
 				18404A341D8273C8000F234A /* ViewController.swift */,
+				87CF23341D827550004D21EE /* Const.swift */,
 				18404A361D8273C8000F234A /* Main.storyboard */,
 				18404A3C1D8273C8000F234A /* Assets.xcassets */,
 				18404A3E1D8273C8000F234A /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18404A3B1D8273C8000F234A /* RevelScheduleManagement.xcdatamodeld in Sources */,
+				87CF23351D827550004D21EE /* Const.swift in Sources */,
 				18404A351D8273C8000F234A /* ViewController.swift in Sources */,
 				18404A331D8273C8000F234A /* AppDelegate.swift in Sources */,
 			);
@@ -290,6 +294,7 @@
 				18404A461D8273C8000F234A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
