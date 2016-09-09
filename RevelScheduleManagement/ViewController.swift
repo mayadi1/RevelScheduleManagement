@@ -7,9 +7,14 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseStorage
+
 
 class ViewController: UIViewController, CLWeeklyCalendarViewDelegate, UITableViewDataSource, UITableViewDelegate {
     
+    let rootRef = FIRDatabase.database().reference()
+
     var employeeURL: NSURL = NSURL()
     
     var calendarView = CLWeeklyCalendarView()
@@ -127,6 +132,7 @@ class ViewController: UIViewController, CLWeeklyCalendarViewDelegate, UITableVie
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
+        
         let alertController = UIAlertController(title: nil, message: "Drop a shift?", preferredStyle: .Alert)
         
         
@@ -139,7 +145,17 @@ class ViewController: UIViewController, CLWeeklyCalendarViewDelegate, UITableVie
         }
         
         let dropAction = UIAlertAction(title: "Drop", style: .Default) { (UIAlertAction) in
-           
+            
+            let work = self.worksDate[indexPath.row]
+            
+         let textField = alertController.textFields![0] as UITextField
+            
+            let reason = textField.text! as String
+            
+            let array = [work.employee, work.id, work.shift_begin_time, work.shift_end_time, reason]
+            
+            self.rootRef.child("drop").childByAutoId().setValue(array)
+            
             self.view.endEditing(true)
             
         }

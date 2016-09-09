@@ -14,6 +14,11 @@
 		18404A3D1D8273C8000F234A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18404A3C1D8273C8000F234A /* Assets.xcassets */; };
 		18404A401D8273C8000F234A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18404A3E1D8273C8000F234A /* LaunchScreen.storyboard */; };
 		185F28C21D82AB4700C79EEF /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185F28C11D82AB4700C79EEF /* TableViewCell.swift */; };
+		185F28C41D82FC4800C79EEF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 185F28C31D82FC4800C79EEF /* GoogleService-Info.plist */; };
+		185F28C61D8302E400C79EEF /* ManagerShifts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185F28C51D8302E400C79EEF /* ManagerShifts.storyboard */; };
+		185F28CA1D8304B500C79EEF /* ManagerShiftController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185F28C91D8304B500C79EEF /* ManagerShiftController.swift */; };
+		18AA59B41D8307E700514CCF /* DroppedUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AA59B31D8307E700514CCF /* DroppedUsers.swift */; };
+		18AA59B61D830B5300514CCF /* DroppingUsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AA59B51D830B5300514CCF /* DroppingUsersTableViewCell.swift */; };
 		87A719C61D82B55F0081D993 /* Work.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CF233A1D82964C004D21EE /* Work.swift */; };
 		87B64C9F1D82CF7D00D6CF54 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87B64C9E1D82CF7D00D6CF54 /* LoginViewController.storyboard */; };
 		87B64CA21D82CF9D00D6CF54 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B64CA11D82CF9D00D6CF54 /* LoginViewController.swift */; };
@@ -26,6 +31,7 @@
 		87CF23521D8298A4004D21EE /* NSDictionary+CL.m in Sources */ = {isa = PBXBuildFile; fileRef = 87CF234C1D8298A4004D21EE /* NSDictionary+CL.m */; };
 		87CF23531D8298A4004D21EE /* UIColor+CL.m in Sources */ = {isa = PBXBuildFile; fileRef = 87CF234E1D8298A4004D21EE /* UIColor+CL.m */; };
 		87CF23541D8298A4004D21EE /* UIImage+CL.m in Sources */ = {isa = PBXBuildFile; fileRef = 87CF23501D8298A4004D21EE /* UIImage+CL.m */; };
+		F082D81D669E634BF05AD7F8 /* Pods_RevelScheduleManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D234CBC5CA0C39DA5F6E9152 /* Pods_RevelScheduleManagement.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +44,13 @@
 		18404A3F1D8273C8000F234A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18404A411D8273C8000F234A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		185F28C11D82AB4700C79EEF /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		185F28C31D82FC4800C79EEF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		185F28C51D8302E400C79EEF /* ManagerShifts.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ManagerShifts.storyboard; sourceTree = "<group>"; };
+		185F28C91D8304B500C79EEF /* ManagerShiftController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagerShiftController.swift; sourceTree = "<group>"; };
+		18AA59B31D8307E700514CCF /* DroppedUsers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DroppedUsers.swift; sourceTree = "<group>"; };
+		18AA59B51D830B5300514CCF /* DroppingUsersTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DroppingUsersTableViewCell.swift; sourceTree = "<group>"; };
+		468EBDEA3CCC7B38C4FE329C /* Pods-RevelScheduleManagement.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RevelScheduleManagement.release.xcconfig"; path = "Pods/Target Support Files/Pods-RevelScheduleManagement/Pods-RevelScheduleManagement.release.xcconfig"; sourceTree = "<group>"; };
+		52B5D800570DC4A967C944C3 /* Pods-RevelScheduleManagement.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RevelScheduleManagement.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RevelScheduleManagement/Pods-RevelScheduleManagement.debug.xcconfig"; sourceTree = "<group>"; };
 		87B64C9E1D82CF7D00D6CF54 /* LoginViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
 		87B64CA11D82CF9D00D6CF54 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		87B64CA31D82D87B00D6CF54 /* LoginClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginClient.swift; sourceTree = "<group>"; };
@@ -58,6 +71,7 @@
 		87CF234E1D8298A4004D21EE /* UIColor+CL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CL.m"; sourceTree = "<group>"; };
 		87CF234F1D8298A4004D21EE /* UIImage+CL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CL.h"; sourceTree = "<group>"; };
 		87CF23501D8298A4004D21EE /* UIImage+CL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CL.m"; sourceTree = "<group>"; };
+		D234CBC5CA0C39DA5F6E9152 /* Pods_RevelScheduleManagement.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RevelScheduleManagement.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F082D81D669E634BF05AD7F8 /* Pods_RevelScheduleManagement.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +91,8 @@
 			children = (
 				18404A311D8273C8000F234A /* RevelScheduleManagement */,
 				18404A301D8273C8000F234A /* Products */,
+				CF8BC9DCDC570B2590565BC9 /* Pods */,
+				3C39CDCBF4FFCE32FCD10030 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,15 +114,28 @@
 				87B64CA31D82D87B00D6CF54 /* LoginClient.swift */,
 				87B64CA01D82CF8C00D6CF54 /* LoginScreen */,
 				18404A361D8273C8000F234A /* Main.storyboard */,
+				185F28C51D8302E400C79EEF /* ManagerShifts.storyboard */,
+				18AA59B51D830B5300514CCF /* DroppingUsersTableViewCell.swift */,
+				185F28C91D8304B500C79EEF /* ManagerShiftController.swift */,
+				18AA59B31D8307E700514CCF /* DroppedUsers.swift */,
 				185F28C11D82AB4700C79EEF /* TableViewCell.swift */,
 				18404A3C1D8273C8000F234A /* Assets.xcassets */,
 				18404A3E1D8273C8000F234A /* LaunchScreen.storyboard */,
+				185F28C31D82FC4800C79EEF /* GoogleService-Info.plist */,
 				18404A411D8273C8000F234A /* Info.plist */,
 				18404A391D8273C8000F234A /* RevelScheduleManagement.xcdatamodeld */,
 				87CF23371D828B60004D21EE /* RevelScheduleManagement-Bridging-Header.h */,
 				87CF23551D8298AC004D21EE /* CLWeeklyCalendarView */,
 			);
 			path = RevelScheduleManagement;
+			sourceTree = "<group>";
+		};
+		3C39CDCBF4FFCE32FCD10030 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D234CBC5CA0C39DA5F6E9152 /* Pods_RevelScheduleManagement.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		87B64CA01D82CF8C00D6CF54 /* LoginScreen */ = {
@@ -138,6 +168,15 @@
 			name = CLWeeklyCalendarView;
 			sourceTree = "<group>";
 		};
+		CF8BC9DCDC570B2590565BC9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				52B5D800570DC4A967C944C3 /* Pods-RevelScheduleManagement.debug.xcconfig */,
+				468EBDEA3CCC7B38C4FE329C /* Pods-RevelScheduleManagement.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,9 +184,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18404A441D8273C8000F234A /* Build configuration list for PBXNativeTarget "RevelScheduleManagement" */;
 			buildPhases = (
+				BE4C5C03240E85666D65910E /* [CP] Check Pods Manifest.lock */,
 				18404A2B1D8273C8000F234A /* Sources */,
 				18404A2C1D8273C8000F234A /* Frameworks */,
 				18404A2D1D8273C8000F234A /* Resources */,
+				2636E74F9298B73861BAE90C /* [CP] Embed Pods Frameworks */,
+				908C9A1C9E2771B73699A0C4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,6 +212,7 @@
 				TargetAttributes = {
 					18404A2E1D8273C8000F234A = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 6KKRC5GQMV;
 					};
 				};
 			};
@@ -198,12 +241,62 @@
 			files = (
 				18404A401D8273C8000F234A /* LaunchScreen.storyboard in Resources */,
 				87B64C9F1D82CF7D00D6CF54 /* LoginViewController.storyboard in Resources */,
+				185F28C41D82FC4800C79EEF /* GoogleService-Info.plist in Resources */,
+				185F28C61D8302E400C79EEF /* ManagerShifts.storyboard in Resources */,
 				18404A3D1D8273C8000F234A /* Assets.xcassets in Resources */,
 				18404A381D8273C8000F234A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2636E74F9298B73861BAE90C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RevelScheduleManagement/Pods-RevelScheduleManagement-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		908C9A1C9E2771B73699A0C4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RevelScheduleManagement/Pods-RevelScheduleManagement-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE4C5C03240E85666D65910E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		18404A2B1D8273C8000F234A /* Sources */ = {
@@ -214,6 +307,9 @@
 				185F28C21D82AB4700C79EEF /* TableViewCell.swift in Sources */,
 				18404A3B1D8273C8000F234A /* RevelScheduleManagement.xcdatamodeld in Sources */,
 				87CF23531D8298A4004D21EE /* UIColor+CL.m in Sources */,
+				18AA59B61D830B5300514CCF /* DroppingUsersTableViewCell.swift in Sources */,
+				18AA59B41D8307E700514CCF /* DroppedUsers.swift in Sources */,
+				185F28CA1D8304B500C79EEF /* ManagerShiftController.swift in Sources */,
 				87CF23351D827550004D21EE /* Const.swift in Sources */,
 				87CF23481D82988F004D21EE /* DayTitleLabel.m in Sources */,
 				87B64CA41D82D87B00D6CF54 /* LoginClient.swift in Sources */,
@@ -335,13 +431,17 @@
 		};
 		18404A451D8273C8000F234A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52B5D800570DC4A967C944C3 /* Pods-RevelScheduleManagement.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = RevelScheduleManagement/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ayadios.RevelScheduleManagement;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "RevelScheduleManagement/RevelScheduleManagement-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -349,13 +449,17 @@
 		};
 		18404A461D8273C8000F234A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 468EBDEA3CCC7B38C4FE329C /* Pods-RevelScheduleManagement.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = RevelScheduleManagement/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ayadios.RevelScheduleManagement;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "RevelScheduleManagement/RevelScheduleManagement-Bridging-Header.h";
 			};
 			name = Release;
