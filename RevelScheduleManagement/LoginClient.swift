@@ -10,7 +10,7 @@ import Foundation
 
 struct LoginClient {
     func login(url: NSURL, completionHandler: (Work) -> () ) {
-        let request = NSURLRequest(URL: oneEmployeeShiftURL)
+        let request = NSURLRequest(URL: url)
         let session = NSURLSession.sharedSession().dataTaskWithRequest(request) { (data, response, error) in
             if error != nil {
                 print(error)

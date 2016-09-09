@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="KUA-kC-Cvo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="KUA-kC-Cvo">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -23,22 +24,21 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="76K-Rz-yb7">
                                 <rect key="frame" x="281" y="285" width="38" height="30"/>
-                                <state key="normal" title="Login"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let the New Experience Begin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HCd-X2-ss1">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="85" y="467" width="230" height="21"/>
-                                </variation>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x74-3a-sVR">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.061718750000000003" colorSpace="calibratedRGB"/>
                             </view>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Pin" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6OS-iL-Dtl">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Pin" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="6OS-iL-Dtl">
                                 <rect key="frame" x="252" y="247" width="97" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="2rK-PU-PJe"/>
@@ -72,9 +72,10 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fbR-6u-Cfn">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
+                                <state key="normal" title="Login"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="177" y="681" width="46" height="30"/>
+                                </variation>
                                 <connections>
                                     <action selector="loginButtonClicked:" destination="o4F-wK-TeA" eventType="touchUpInside" id="fdI-3h-YvI"/>
                                 </connections>
@@ -140,27 +141,27 @@
                                 <exclude reference="fbR-6u-Cfn"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="CiS-h2-hs0"/>
-                                <exclude reference="kCk-6G-zHl"/>
-                                <exclude reference="sSb-Du-uZ2"/>
-                                <exclude reference="7EB-Pv-WGO"/>
-                                <exclude reference="LAi-e3-Hbu"/>
+                                <exclude reference="eR4-W4-OTU"/>
                                 <exclude reference="4Ih-WE-TAq"/>
                                 <exclude reference="9QW-1g-54S"/>
                                 <exclude reference="AuN-c2-tN9"/>
                                 <exclude reference="dqh-3W-1KG"/>
                                 <exclude reference="mzv-21-SME"/>
+                                <exclude reference="7EB-Pv-WGO"/>
+                                <exclude reference="LAi-e3-Hbu"/>
                                 <exclude reference="IGh-m6-zsM"/>
                                 <exclude reference="VSy-lm-5ej"/>
-                                <exclude reference="D7U-EO-f6H"/>
-                                <exclude reference="SGj-ek-cFc"/>
-                                <exclude reference="UHX-6V-on0"/>
                                 <exclude reference="IK5-gB-Qms"/>
                                 <exclude reference="hb7-Yb-9Kc"/>
                                 <exclude reference="sAd-s8-1Zf"/>
+                                <exclude reference="CiS-h2-hs0"/>
+                                <exclude reference="kCk-6G-zHl"/>
+                                <exclude reference="sSb-Du-uZ2"/>
+                                <exclude reference="D7U-EO-f6H"/>
+                                <exclude reference="SGj-ek-cFc"/>
+                                <exclude reference="UHX-6V-on0"/>
                                 <exclude reference="Xda-JI-oAo"/>
                                 <exclude reference="f15-Hl-cfv"/>
-                                <exclude reference="eR4-W4-OTU"/>
                                 <exclude reference="Mcy-CL-WUm"/>
                                 <exclude reference="XzA-yC-yZ5"/>
                                 <exclude reference="hZl-xs-Dgn"/>
@@ -175,34 +176,34 @@
                                 <include reference="fbR-6u-Cfn"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="eR4-W4-OTU"/>
+                                <include reference="4Ih-WE-TAq"/>
+                                <include reference="9QW-1g-54S"/>
+                                <include reference="AuN-c2-tN9"/>
+                                <include reference="dqh-3W-1KG"/>
+                                <include reference="mzv-21-SME"/>
+                                <include reference="7EB-Pv-WGO"/>
+                                <include reference="LAi-e3-Hbu"/>
+                                <include reference="IGh-m6-zsM"/>
+                                <include reference="VSy-lm-5ej"/>
+                                <include reference="IK5-gB-Qms"/>
+                                <include reference="hb7-Yb-9Kc"/>
+                                <include reference="sAd-s8-1Zf"/>
                                 <exclude reference="551-wy-9Af"/>
                                 <exclude reference="BWj-rs-bqf"/>
                                 <include reference="CiS-h2-hs0"/>
                                 <include reference="kCk-6G-zHl"/>
                                 <exclude reference="oy8-hJ-b2D"/>
                                 <include reference="sSb-Du-uZ2"/>
-                                <include reference="7EB-Pv-WGO"/>
-                                <include reference="LAi-e3-Hbu"/>
-                                <include reference="4Ih-WE-TAq"/>
-                                <include reference="9QW-1g-54S"/>
-                                <include reference="AuN-c2-tN9"/>
-                                <include reference="dqh-3W-1KG"/>
-                                <include reference="mzv-21-SME"/>
-                                <include reference="IGh-m6-zsM"/>
-                                <include reference="VSy-lm-5ej"/>
                                 <exclude reference="4xh-tx-bNw"/>
                                 <include reference="D7U-EO-f6H"/>
                                 <include reference="SGj-ek-cFc"/>
                                 <include reference="UHX-6V-on0"/>
-                                <include reference="IK5-gB-Qms"/>
-                                <include reference="hb7-Yb-9Kc"/>
-                                <include reference="sAd-s8-1Zf"/>
                                 <exclude reference="0uI-2f-ck1"/>
                                 <exclude reference="CO5-mi-sUG"/>
                                 <include reference="Xda-JI-oAo"/>
                                 <include reference="f15-Hl-cfv"/>
                                 <exclude reference="sPj-D9-FH3"/>
-                                <include reference="eR4-W4-OTU"/>
                                 <include reference="Mcy-CL-WUm"/>
                                 <include reference="XzA-yC-yZ5"/>
                                 <exclude reference="dba-5w-1HO"/>
