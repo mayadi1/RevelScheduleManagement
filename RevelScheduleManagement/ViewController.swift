@@ -13,6 +13,24 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        let request = NSURLRequest(URL: oneEmployeeShiftURL)
+        let session = NSURLSession.sharedSession().dataTaskWithRequest(request) { (data, response, error) in
+            if error != nil {
+                print(error)
+            } else {
+                print(data)
+                if let data = data {
+                    do {
+                        let json = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers)
+                        print(json)
+                    } catch let jsonError as NSError {
+                        print(jsonError)
+                    }
+                }
+            }
+        }
+        session.resume()
     }
 
     override func didReceiveMemoryWarning() {
