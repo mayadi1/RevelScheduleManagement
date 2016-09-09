@@ -12,6 +12,7 @@ class ScheduleViewController: UIViewController, UITableViewDelegate, UITableView
     
     var allWorks = [Work]()
     var worksDate = [Work]()
+    var employees = [Employee]()
     
     var calendarView = CLWeeklyCalendarView()
     @IBOutlet weak var tableView: UITableView!
@@ -41,15 +42,15 @@ class ScheduleViewController: UIViewController, UITableViewDelegate, UITableView
         // First get all employees.
         loginClient.getEmployees(NSURL(string: allEmployeesURLString)!) { (employees) in
             print(employees)
-            
-            self.getWorks(from: employees, completionHandler: { (works) in
+            self.employees = employees
+            self.getWorks(from: employees) { (works) in
                 if works.count > 0 {
                     self.allWorks += works
                     dispatch_async(dispatch_get_main_queue(), { 
                         self.tableView.reloadData()
                     })
                 }
-            })
+            }
         }
     }
     
@@ -71,7 +72,7 @@ class ScheduleViewController: UIViewController, UITableViewDelegate, UITableView
                             if let jsonDict = json as? NSDictionary {
                                 if let objects = jsonDict["objects"] as? [[String : AnyObject]] {
                                     print(objects)
-                                    let works = WorkGenerator.generateWorks(objects: objects)
+                                    let works = WorkGenerator.schedule_generateWorks(employee: employee, objects: objects)
                                     if let works = works {
                                         completionHandler(works)
                                     }
@@ -91,13 +92,15 @@ class ScheduleViewController: UIViewController, UITableViewDelegate, UITableView
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("ScheduleTableViewCell", forIndexPath: indexPath) as! ScheduleTableViewCell
-        let work = allWorks[indexPath.row]
-        cell.textLabel?.text = String(work.id) + " m\(work.month) d\(work.day)"
+        let work = worksDate[indexPath.row]
+        let first = work.employeeObj?.first_name
+        let last = work.employeeObj?.last_name
+        cell.textLabel?.text = first! + " " + last! + ": \(work.hour) - \(work.endingHour)"
         return cell
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return allWorks.count
+        return worksDate.count
     }
     
     // MARK: - CalendarViewDelegate
@@ -108,7 +111,8 @@ class ScheduleViewController: UIViewController, UITableViewDelegate, UITableView
     
     
     func dailyCalendarViewDidSelect(date: NSDate!) {
-      //  self.tableView.reloadData()
+        worksDate.removeAll()
+        self.tableView.reloadData()
         
         let calendar = NSCalendar.currentCalendar()
         let components = calendar.components([.Day , .Month , .Year], fromDate: date)
