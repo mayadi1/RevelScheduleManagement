@@ -18,7 +18,8 @@ class ViewController: UIViewController, CLWeeklyCalendarViewDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        calendarView.frame = CGRectMake(0, 0, view.bounds.size.width, 150)
+        let frame = CGRectMake(0, 0, view.bounds.size.width, 130)
+        calendarView = CLWeeklyCalendarView(frame: frame)
         calendarView.backgroundColor = UIColor.blueColor()
         calendarView.delegate = self
         self.view.addSubview(self.calendarView)
