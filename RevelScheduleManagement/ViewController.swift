@@ -67,6 +67,31 @@ class ViewController: UIViewController, CLWeeklyCalendarViewDelegate, UITableVie
         
         
         
+        //
+        let conditionall = rootRef.child("delete")
+        conditionall.observeEventType(.Value, withBlock:  { (snapshot) in
+            
+            
+            print(snapshot.value)
+            
+            var i = 0
+            
+            for tempWork in self.works{
+                
+                if(tempWork.shift_begin_time == snapshot.value as! String){
+                    
+                    self.works.removeAtIndex(i)
+                    self.tableView.reloadData()
+                    
+                }else{
+                    
+                }
+             
+                i = i + 1
+            }
+        })
+        
+        
     }
     
     func CLCalendarBehaviorAttributes() -> [NSObject : AnyObject]! {
@@ -163,5 +188,7 @@ class ViewController: UIViewController, CLWeeklyCalendarViewDelegate, UITableVie
         alertController.addAction(dropAction)
         self.presentViewController(alertController, animated: true, completion: nil)
     }
+    
+
 }
 
