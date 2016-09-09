@@ -34,6 +34,15 @@ class ViewController: UIViewController, CLWeeklyCalendarViewDelegate {
                     do {
                         let json = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers)
                         print(json)
+                        if let jsonDict = json as? NSDictionary {
+                            if let objects = jsonDict["objects"] as? [[String : AnyObject]] {
+                                print(objects)
+                                print(objects[0])
+                                let works = WorkGenerator.generateWorks(objects: objects)
+                            }
+                        }
+                        
+                        
                     } catch let jsonError as NSError {
                         print(jsonError)
                     }
@@ -58,7 +67,7 @@ class ViewController: UIViewController, CLWeeklyCalendarViewDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
+
+
 
