@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="WHI-5y-W96">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Schedule View Controller-->
+        <scene sceneID="Rqm-vW-R9l">
+            <objects>
+                <viewController storyboardIdentifier="ScheduleViewController" id="WHI-5y-W96" customClass="ScheduleViewController" customModule="RevelScheduleManagement" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4fz-Wf-GmE"/>
+                        <viewControllerLayoutGuide type="bottom" id="mf4-3v-bIb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HUM-S9-Na1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Wwn-x4-aj4">
+                                <rect key="frame" x="0.0" y="120" width="600" height="480"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ScheduleTableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="ScheduleTableViewCell" id="ziK-WA-3aV" userLabel="ScheduleTableViewCell" customClass="ScheduleTableViewCell" customModule="RevelScheduleManagement" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ziK-WA-3aV" id="bHp-6U-M6o">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mf4-3v-bIb" firstAttribute="top" secondItem="Wwn-x4-aj4" secondAttribute="bottom" id="30N-Nb-FSs"/>
+                            <constraint firstAttribute="trailing" secondItem="Wwn-x4-aj4" secondAttribute="trailing" id="bq2-xV-W4u"/>
+                            <constraint firstItem="Wwn-x4-aj4" firstAttribute="top" secondItem="4fz-Wf-GmE" secondAttribute="bottom" constant="100" id="dw1-0W-xFP"/>
+                            <constraint firstItem="Wwn-x4-aj4" firstAttribute="leading" secondItem="HUM-S9-Na1" secondAttribute="leading" id="ujV-8T-nbw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="Wwn-x4-aj4" id="Y7x-4c-js1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ADf-hO-yD3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="299" y="259"/>
+        </scene>
+    </scenes>
+</document>

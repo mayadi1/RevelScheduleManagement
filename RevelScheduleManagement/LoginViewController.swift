@@ -40,23 +40,23 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     private func login(url: NSURL) {
         let loginClient = LoginClient()
         loginClient.login(url) { (work) in
-            let role = work.role
-            
-            if role == "/resources/Role/2/" { // Manager
-                // Go to manager screen.
-            } else {
-                // Go to employee screen.
-                
-                dispatch_async(dispatch_get_main_queue(), { 
+            dispatch_async(dispatch_get_main_queue(), {
+                let role = work.role
+                if role == "/resources/Role/2/" { // Manager
+                    // Go to manager screen.
+                    let managerSB = UIStoryboard(name: "ManagerViewController", bundle: nil)
+                    let ManagerVC = managerSB.instantiateViewControllerWithIdentifier("ManagerViewController") 
+                    self.presentViewController(ManagerVC, animated: true, completion:nil)
+                } else {
+                    // Go to employee screen.
                     let loginStoryBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
                     let employeeViewController: ViewController = loginStoryBoard.instantiateViewControllerWithIdentifier("EmployeeViewController") as! ViewController
                     employeeViewController.employeeURL = url
                     self.presentViewController(employeeViewController, animated: true, completion: nil)
-                })
-
-                // Instantiate VC.
-                // Pass id number.
-            }
+                    // Instantiate VC.
+                    // Pass id number.
+                }
+            })
         }
     }
 }
